@@ -1,54 +1,11 @@
-package Daily_problems.Feb_2023.Feb_2023;
+package Daily_problem;
+import java.util.*;
+public class Shortest_Path_Using_Atmost_One_Curved_Edge {
+    
+}
 //{ Driver Code Starts
-    import java.io.*;
-    import java.util.*;
-    
-    class GFG {
-        public static void main(String args[]) throws IOException {
-            BufferedReader read =
-                new BufferedReader(new InputStreamReader(System.in));
-            int t = Integer.parseInt(read.readLine());
-            while (t-- > 0) {
-                String S[] = read.readLine().split(" ");
-                int n = Integer.parseInt(S[0]);
-                int m = Integer.parseInt(S[1]);
-                
-                String S1[] = read.readLine().split(" ");
-                int a = Integer.parseInt(S1[0]);
-                int b = Integer.parseInt(S1[1]);
-                
-                ArrayList<ArrayList<Integer>> edges = new ArrayList<ArrayList<Integer>>();
-                
-                for(int i=0; i<m; i++)
-                {
-                    String S2[] = read.readLine().split(" ");
-                    int u = Integer.parseInt(S2[0]);
-                    int v = Integer.parseInt(S2[1]);
-                    int x = Integer.parseInt(S2[2]);
-                    int y = Integer.parseInt(S2[3]);
-                    
-                    ArrayList<Integer> edge = new ArrayList<>();
-                    edge.add(u);
-                    edge.add(v);
-                    edge.add(x);
-                    edge.add(y);
-                    
-                    edges.add(edge);
-                }
-    
-                Solution ob = new Solution();
-                System.out.println(ob.shortestPath(n,m,a,b,edges));
-            }
-        }
-    }
+  
     // } Driver Code Ends
-    
-    
-    //User function Template for Java
-    
-    
-    
-    //User function Template for Java
     
     class Solution {
         static class pair implements Comparable<pair> {
